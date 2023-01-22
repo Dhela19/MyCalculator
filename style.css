@@ -118,7 +118,7 @@ body{
     border-radius:1rem;
     font-size:24px;
     font-weight:500;
-    color:white;
+    color:#2b6dffb2;
 }
 
 /* Event Section */
@@ -128,4 +128,9 @@ body{
     backdrop-filter:blur(10px);
     border-radius:0.5rem;
     border:1px solid white;
+}
+@media (min-width:700px){
+    #cont{
+        min-height:70rem;
+    }
 }
