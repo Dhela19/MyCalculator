@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyCalculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="cont" class="gls">
+        <p id="head">MyCalculator</p>
+        <div id="field">
+            <input type="text" id="disp" maxlength="20">
+            <input type="text" id="res" maxlength="20">
+            </input>
+        </div>
+        <div id="pad">
+            <div class="row">
+                <button class="btns"id="add" onclick="add()">+</button>
+                <button class="btns" id="subt" onclick="subt()">-</button>
+                <button class="btns" id="mult" onclick="mult()">×</button>
+                <button class="btns" id="div" onclick="div()">/</button>
+            </div>
+            <div class="row">
+                <button class="btns" id="mc">C</button>
+                <button class="btns" id="9" onclick="nine()">9</button>
+                <button class="btns" id="equals" onclick="equals()">=</button>
+            </div>
+            <div class="row">
+                <button class="btns" id="6" onclick="six()">6</button>
+                <button class="btns" id="7" onclick="seven()">7</button>
+                <button class="btns" id="8" onclick="eight()">8</button>
+            </div>
+            <div class="row">
+                <button class="btns" id="3" onclick="three()">3</button>
+                <button class="btns" id="4" onclick="four()">4</button>
+                <button class="btns" is="5" onclick="five()">5</button>
+            </div>
+            <div class="row">
+                <button class="btns" id="0" onclick="zero()">0</button>
+                <button class="btns" id="1" onclick="one()">1</button>
+                <button class="btns" id="2" onclick="two()">2</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
