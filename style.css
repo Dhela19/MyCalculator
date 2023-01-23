@@ -49,14 +49,17 @@ body{
     align-items:center;
     justify-items:center;
     margin:auto;
+    margin-bottom:1rem;
+    margin-left:1rem;
+    margin-right:1rem;
     min-height:20rem;
     width:100%;
     /*margin-left:1rem;
     margin-right:1rem;
     /*border:2px solid green;*/
 }
-#disp{
-    width:90%;
+
+.io{
     height:auto;
     min-height:4rem;    
     background-color:white;
@@ -65,31 +68,16 @@ body{
     margin:auto;
     border-radius:1rem;
     text-align: right;
-    font-size:20px;
+    font-size:40px;
     font-weight:600;
     padding:4px;
     text-overflow:none;
     white-space:nowrap;
     border:none;
-   
+    width:90%;
 }
 #res{
     display:none;
-    width:90%;
-    height:auto;
-    min-height:4rem;    
-    background-color:white;
-    /*border:2px solid blue;*/
-    box-shadow:0 0 10px black;
-    margin:auto;
-    border-radius:1rem;
-    text-align: right;
-    font-size:20px;
-    font-weight:600;
-    padding:4px;
-    text-overflow:none;
-    white-space:nowrap;
-    border:none;
 }
 .row{
     display:flex;
@@ -131,6 +119,22 @@ body{
 }
 @media (min-width:700px){
     #cont{
-        min-height:70rem;
+        min-height:50rem;
+    }
+    #head{
+        font-size:50px;
+    }
+    #pad{
+        min-height:40rem;
+    }
+    .btns{
+        min-height:6rem;
+        font-size:40px;
+        box-shadow:0 0 10px #525252;
+    }
+    .io{
+        font-size:80px;
+        min-height:10rem;
+        border-radius:20px;
     }
 }

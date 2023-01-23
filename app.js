@@ -1,5 +1,4 @@
 var display = (document.getElementById("disp"));
-var d = (display.value);
 var results = (document.getElementById("res"));
 function add()
 {
@@ -10,10 +9,6 @@ function subt(){
 }
 function mult(){
     display.value +=("*")
-}
-function mc(){
-display.style=("display:inline")
-    display.value=("null")
 }
 function nine(){
     display.value +=("9")
@@ -50,9 +45,18 @@ function zero(){
     display.value +=("0")
 }
 function equals(){
-    d = parseFloat;
+    function looseJsonParse(display) {
+  return eval?.(`"use strict";(${display.value})`);
+}
+results.value=(looseJsonParse(display));
     display.style=("display:none");
     results.style=("display:inline");
-    return results.value=d
+    //return results.value=results
     
+}
+function mc(){
+display.style=("display:inline")
+    display.value=("")
+    results.style=("display:none")
+    results.value=("")
 }
