@@ -44,6 +44,7 @@ function one(){
 function zero(){
     display.value +=("0")
 }
+//Equals operation
 function equals(){
     function looseJsonParse(display) {
   return eval?.(`"use strict";(${display.value})`);
@@ -60,3 +61,14 @@ display.style=("display:inline")
     results.style=("display:none")
     results.value=("")
 }
+//Play Audio on click
+
+const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+const buttons = document.querySelectorAll("btns");
+
+buttons.forEach(button => {
+  buttons.addEventListener("click", () => {
+    audio.play();
+  });
+});
+//
